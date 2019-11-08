@@ -1,0 +1,42 @@
+.eventPhoto {
+  background-image: url('http://creativephotoacademy.com/wp-content/uploads/2019/01/kids-sports.jpg');
+  height: 25vh;
+  position: relative;
+  top: 80px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 4rem;
+  color: white;
+}
+
+.liColor {
+  color: black;
+  list-style: initial;
+  margin-bottom: 5px;
+}
+
+.dateDetailsRow {
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.largeBoldSpanEvent {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.padUl{
+  padding-left: 50px;
+}
+
+@media screen and (max-width: 812px) {
+  div.eventPhoto {
+    font-size: 1.5rem;
+  }
+}

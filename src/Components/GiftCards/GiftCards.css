@@ -1,0 +1,20 @@
+.giftPhoto {
+  background-image: url('http://creativephotoacademy.com/wp-content/uploads/2014/02/DSC_0402-edit-710x473.jpg');
+  height: 25vh;
+  position: relative;
+  top: 80px;
+  background-position: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 4rem;
+  color: white;
+}
+
+.giftContainer {
+  position: relative;
+  top: 100px;
+  padding: 20px;
+}

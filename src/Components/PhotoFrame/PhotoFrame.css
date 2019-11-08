@@ -1,0 +1,54 @@
+.eduPhotoBlur {
+  filter: blur(10px);
+  position: relative;
+  height: 227px;
+  width: 222px;
+  top: 16px;
+  left: 15px;
+}
+
+.eduPhoto {
+  position: relative;
+  height: 227px;
+  width: 222px;
+  top: 16px;
+  left: 15px;
+}
+
+.bySpan {
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  width: max-content;
+}
+
+.content {
+  position: absolute;
+  height: 227px;
+  width: 222px;
+  margin: 0;
+  left: 15px;
+  bottom: 62px;
+
+}
+
+.contentSpan {
+  pointer-events: none;
+  padding: 15px;
+  height: 227px;
+  width: 222px;
+  left: 15px;
+  color: white;
+  font: 'Raleway';
+  align-items: center;
+  font-size: .8rem;
+  font-family: 'Raleway';
+  font-weight: 900;
+  line-height: 1.5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .photoFrame {
+    margin-top: 10px;
+  }
+}

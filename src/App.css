@@ -1,22 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.educatorsContainer {
+  background-color: black;
   display: flex;
-  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: calc(100vh - 80px);
+  width: 100vw;
+  align-items: center;
+  position: relative;
+  top: 80px;
+}
+
+.reviewPhoto {
+  background-image: url('http://creativephotoacademy.com/wp-content/uploads/2014/01/aKenya2007-4040.jpg');
+  height: 25vh;
+  position: relative;
+  top: 80px;
+  backgroun-position: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 4rem;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+@media screen and (max-width: 600px) {
+  .feature-container {
+    height: 60vh;
+  }
+
+  .educatorsContainer {
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 812px) {
+  .feature-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    height: 80vh;
+  }
+
+  .bannerPhoto {
+    font-size: 2rem;
+  }
 }

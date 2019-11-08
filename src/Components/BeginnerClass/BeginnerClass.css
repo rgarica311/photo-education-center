@@ -1,0 +1,64 @@
+.classPhoto {
+  background-image: url('http://creativephotoacademy.com/wp-content/uploads/2014/02/Class-First-Look-Nikon-710x400.jpg');
+  height: 25vh;
+  position: relative;
+  top: 80px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 4rem;
+  color: white;
+}
+
+.datesDetailsColumn {
+  display: flex;
+  flex-direction: column;
+  top: 100px;
+  position: relative;
+}
+
+.datesContainerRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.dateColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.largeVoldSpan{
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.beginnerClassDetail {
+  padding: 50px;
+  margin: 0;
+}
+
+.sReviews {
+  margin-top: 10px;
+}
+
+.flexRow {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+@media screen and (max-width: 812px) {
+  div.classPhoto {
+    font-size: 1.5rem;
+  }
+}

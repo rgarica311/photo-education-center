@@ -1,0 +1,58 @@
+import React from 'react'
+import './Policies.css'
+
+export default function Policies(props){
+  return(
+    <>
+      <div className='policiesPhoto bannerPhoto'>POLICIES</div>
+      <div className='policiesContainer'>
+        <h2>CLASSES & EVENTS</h2>
+        <p>We understand occasionally you may need to cancel or reschedule a class, walk.</p>
+        <p>Cancellations must be received in written form via post, fax or email or via phone with the Academy Director.</p>
+        <p>Email: info@creativephotoacademy.com  Phone: 310-375-7014</p>
+        <p>Classes and walks purchased from Creative Photo Academy and PAUL’S PHOTO are eligible for refund. Third party purchases from Course-Horse, City of Torrance, etc. and charitable donations are not eligible for refund.</p>
+        <p>A refund will be provided up to <span className='boldSpan'>14 days</span> prior to the class or workshop start date (first day of a series) less a $10 or 10 % administration fee (whichever is greater).</p>
+        <p>A refund will be provided for cancellations up to <span className='boldSpan'>72 hours</span> before the class or workshop start time less a $25 or 25% administration fee (whichever is greater).</p>
+        <p>Cancellations received less than <span className='boldSpan'>72 hours</span> prior to the class or workshop start will receive Class Credit or transfer to the next session of this class only.  Class credit will be given for Creative Photo Academy classes & events only.</p>
+        <p>Cancellations <span className='boldSpan'>within 24 hours</span> of the start of the class, Receive no refund or class credit.</p>
+        <p>Cancellation after the start or a class or workshop, no shows and early departures are not eligible for credit, transfer or refund.</p>
+        <p>Students may request a Class Credit or Transfer in lieu of refund and avoid administrative fees.</p>
+        <h3>Note:</h3>
+        <p>We understand you may need to cancel or reschedule your Adventure.</p>
+        <p>If work issues, family issues or health issues are a concern we recommend TRAVEL INSURANCE to protect your investment.  Travel insurance protects you if you need to change or cancel your trip for covered reasons.</p>
+        <span>Travel Guard is recommended www.travelguard.com. Your coverage should include:</span>
+        <ul>
+          <li className='liBlack'><span>Trip insurance protects your covered deposit, tuition and travel expenses.</span></li>
+          <li className='liBlack'><span>Travel insurance protects you from lost baggage, cancelled flights, etc</span></li>
+          <li className='liBlack'><span>Medical pays for medical expenses while traveling and repatriation (flying you home) in case of illness or accident</span></li>
+        </ul>
+        <span className='boldSpan'>CANCELLATION POLICY FOR PHOTOS ADVENTURES AND WORKSHOPS</span>
+        <p>Your deposit is non-refundable.</p>
+        <p>Adventure Cancellations must be received in written form via post, fax or email.</p>
+        <p>Email: info@creativephotoacademy.com</p>
+        <span className='boldSpan'>International Photo Trips and Adventures:</span>
+        <ul>
+        <li className='liBlack'><span>Cancellation received at Creative Photo Academy<span className='boldSpan'>  120 days prior</span> to departure will receive a refund, less deposit.</span></li>
+        <li className='liBlack'><span>Cancellation <span className='boldSpan'> 90 days prior</span> to departure days forfeits deposit may incur penalties from innkeeper and receive 50% credit of the balance of fees paid towards a future CPA Adventure.</span></li>
+        <li className='liBlack'><span>Cancellation less than <span className='boldSpan'> 90 days prior</span> to departure days receives no credit or refund.</span></li>
+        </ul>
+        <span className='boldSpan'>Domestic Photo Trips, Adventures and Workshops:</span>
+        <ul>
+        <li className='liBlack'><span>Cancellation received at Creative Photo Academy<span className='boldSpan'> 120 days prior</span> to departure will receive a refund, less deposit.</span></li>
+        <li className='liBlack'><span>Cancellations received <span className='boldSpan'> 90 days prior</span> to departure forfeit deposit, may incur penalties from innkeeper and receive credit for remainder of fees paid towards a future Creative Photo Academy Adventure.</span></li>
+        <li className='liBlack'><span>Cancellations received <span className='boldSpan'> 60 days prior</span> to departure forfeit deposit and may incur penalties from innkeeper and receive 50% credit of the balance of fees paid towards a future CPA Adventure.</span></li>
+        <li className='liBlack'><span>Cancellations received <span className='boldSpan'> 15 days prior</span> to departure, no-shows or early departures receive no credit or refund.</span></li>
+        </ul>
+        <p>Occasionally Adventures must be cancelled due to safety, lack of enrollment or other concerns. In the event of cancellation you will receive a refund of your deposit and tuition.</p>
+        <p>Trips and Adventures contracted or booked thru third-parties may have differing rules and restrictions.</p>
+        <span className='boldSpan'>CANCELLATION of our CLASS, & WALKS</span>
+        <p>We strive to make every event go!  On occasion a class, walk, workshop or trip may be cancelled due to low enrollment or other unforeseen circumstances.  Most excursions go rain or shine and are not cancelled due to weather.  If your Creative Photo Academy event is cancelled all students may elect a full refund or class credit.</p>
+        <p>Creative Photo Academy and PAUL’S PHOTO does not take responsibility for non-refundable airline tickets, hotel expenses or any other costs that may be attributable towards enrolling in a class, walk, workshop or trip if it is cancelled</p>
+        <p><span className='boldSpan'>Class Credit</span> – Creative Photo Academy class credit that can be used for classes, workshops or trips paid to Creative Photo Academy.  Class credit is not valid for merchandise at PAUL’S PHOTO and classes or trips paid to outside organizations, agents or providers.  Class credits are held in the Academy Director’s office or as a Gift Card mailed to you.  Class credits will not be refunded.  Class credits never expire.</p>
+        <p><span className='boldSpan'>Transfers</span> – You may elect to transfer to the next session or another CPA class. Transfers are valid one-time only, non-transferable and must be completed at the time of cancellation.</p>
+        <p><span className='boldSpan'>Third Party Purchases</span> – Any class purchased through a third party vendor such as Course-Horse, City of Torrance, etc., are not eligible for a refund.  You are eligible for transfer only.</p>
+        <p><span className='boldSpan'>Charitable Certificates</span> – PAUL’S PHOTO and Creative Photo Academy donates gift certificates to many charitable organizations.  Charitable Certificates are non-transferable, non-refundable and not eligible for class credits or transfers.</p>
+      </div>
+    </>
+  )
+}

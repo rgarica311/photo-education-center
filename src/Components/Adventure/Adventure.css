@@ -1,0 +1,38 @@
+.adventurePhoto {
+  background-image: url('http://creativephotoacademy.com/wp-content/uploads/2017/04/aHavana2014-2004-710x400.jpg');
+  height: 25vh;
+  position: relative;
+  top: 80px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 4rem;
+  color: white;
+}
+
+.adventureDetail {
+  padding: 50px;
+  margin-top: 100px;
+}
+
+.boldSpanAdventure {
+  font-weight: bold;
+}
+
+.boldSpanAdventure::after {
+  content: " ";
+}
+
+.largeBoldSpan {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.dateColumnAdventure {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+}

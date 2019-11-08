@@ -1,0 +1,15 @@
+.home-page-card {
+  background-image: url('./transparentDiv.png');
+  width: 326px;
+  height: 132px;
+  display: flex;
+  background-size: cover;
+  background-repeat: repeat;
+}
+
+@media screen and (max-width: 600px) {
+  .home-page-card {
+    width: 310px;
+    margin-top: 30px;
+  }
+}

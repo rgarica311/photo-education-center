@@ -1,0 +1,104 @@
+.nav-link:hover {
+  color: red;
+}
+
+.nav-link {
+  color: lightgrey;
+  text-decoration: none;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: .8rem;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.list-container {
+  background-color: grey;
+  position: absolute;
+  top: 80px;
+  margin: 0;
+  padding: 0;
+  width: 350px;
+  height: max-content;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#about {
+  left: 33vw;
+}
+
+#classes {
+  left: 43vw;
+}
+
+#adventures {
+  left: 53vw;
+}
+
+#events {
+  left: 63vw;
+}
+
+#fundraisers{
+  left: 73vw;
+}
+
+.dd-menu-el {
+  text-decoration: none;
+  color: lightgrey;
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+}
+
+.dd-menu-el:hover {
+  background-color: darkgrey;
+  cursor: pointer;
+}
+
+.header-submenu-container {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 812px) {
+  .logo{
+    font-size: .7rem;
+    margin-bottom: 0px;
+  }
+
+  .nav-link {
+    font-size: .4rem;
+    height: 0%;
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    font-size: .5rem;
+    top: 1.78px;
+    position: relative;
+  }
+
+  .nav-link {
+    font-size: .5rem;
+  }
+}

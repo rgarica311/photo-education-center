@@ -1,0 +1,31 @@
+.faqContainer {
+  position: relative;
+  top: 100px;
+}
+
+.faqElement {
+  color: black;
+  margin-bottom: 15px;
+}
+.question {
+  font-weight: bold;
+}
+
+.faqH2, .subhead {
+  padding-left: 40px;
+}
+
+.faqPhoto {
+  background-image: url('http://creativephotoacademy.com/wp-content/uploads/2014/01/aKenya2007-4040.jpg');
+  height: 25vh;
+  position: relative;
+  top: 80px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 4rem;
+  color: white;
+}

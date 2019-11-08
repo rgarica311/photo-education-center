@@ -1,0 +1,30 @@
+.policiesContainer {
+  position: relative;
+  top: 100px;
+  padding: 20px;
+}
+
+.policiesPhoto {
+  background-image: url('http://creativephotoacademy.com/wp-content/uploads/2014/01/aKenya2007-4040.jpg');
+  height: 25vh;
+  position: relative;
+  top: 80px;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 4rem;
+  color: white;
+}
+
+.liBlack {
+  color: black;
+  margin-bottom: 10px;
+  list-style: initial;
+}
+
+.boldSpan {
+  font-weight: bold;
+}
