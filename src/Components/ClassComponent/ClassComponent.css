@@ -1,9 +1,10 @@
 .classPhoto {
-  background-image: url('http://creativephotoacademy.com/wp-content/uploads/2014/02/Class-First-Look-Nikon-710x400.jpg');
-  height: 25vh;
+  height: 40vh;
+  width: 100vw;
   position: relative;
-  top: 80px;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,33 +14,26 @@
   color: white;
 }
 
-.datesDetailsColumn {
-  display: flex;
-  flex-direction: column;
-  top: 100px;
-  position: relative;
+.photo {
+  background-image: url('https://s4c5f7q2.stackpathcdn.com/clevercourse/wp-content/uploads/2014/08/photodune-6243139-vintage-photography-m.jpg');
+  height: 490px;
+  width: 690px;
+  background-position: center;
+  background-size: cover;
+  margin-right: 50px;
 }
 
-.datesContainerRow {
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
 
 .dateColumn {
   display: flex;
   flex-direction: column;
 }
 
-.largeVoldSpan{
+.largeBoldSpan{
   font-weight: bold;
   font-size: 1.5rem;
 }
 
-.beginnerClassDetail {
-  padding: 50px;
-  margin: 0;
-}
 
 .sReviews {
   margin-top: 10px;
@@ -55,6 +49,10 @@
   flex-direction: column;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+li {
+  color: black;
 }
 
 @media screen and (max-width: 812px) {

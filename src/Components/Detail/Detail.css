@@ -1,0 +1,58 @@
+.detailListEl {
+  border-bottom: 1px solid lightgrey;
+  padding: 15px;
+}
+
+.detailListElCol {
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.detailsContainerCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: ghostwhite;
+  height: 675px;
+  width: 350px;
+  padding: 15px;
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
+.detailPhoto {
+	width: 150px;
+	height: 150px;
+	background: red;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+  position: relative;;
+  margin: 0 auto;
+  background-image: url('http://creativephotoacademy.com/wp-content/uploads/2016/07/Mark-About-Us-Page.jpg');
+  background-size: cover;
+}
+
+.datesDetailsRow {
+  display: flex;
+  top: 50px;
+  padding-left: 90px;
+  padding-right: 90px;
+  position: relative;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.beginnerClassDetail {
+  position: absolute;
+  margin: 0;
+  width: 690px;
+  top: 550px;
+}
+
+.bookButton {
+  width: 100px;
+  height: 50px;
+}

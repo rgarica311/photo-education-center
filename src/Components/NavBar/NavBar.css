@@ -16,7 +16,7 @@
 
 .list-container {
   background-color: grey;
-  position: absolute;
+  position: fixed;
   top: 80px;
   margin: 0;
   padding: 0;
@@ -29,11 +29,11 @@
 }
 
 #about {
-  left: 33vw;
+  left: 53vw;
 }
 
 #classes {
-  left: 43vw;
+  left: 73vw;
 }
 
 #adventures {
@@ -41,10 +41,6 @@
 }
 
 #events {
-  left: 63vw;
-}
-
-#fundraisers{
   left: 73vw;
 }
 

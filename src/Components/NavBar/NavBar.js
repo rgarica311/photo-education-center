@@ -83,7 +83,7 @@ export default class NavBar extends Component {
             {
               Object.keys(aboutMenu).map(key => {
                 if(aboutMenu[key] !== null && typeof(aboutMenu[key]) !== 'number'){
-                  return <Link key={aboutMenu[key]} to={'/', aboutMenu[key]}><li className='dd-menu-el' key={aboutMenu[key]}>{aboutMenu[key]}</li></Link>
+                  return <Link key={aboutMenu[key]} to={'/', aboutMenu[key].split(' ').join('-')}><li className='dd-menu-el' key={aboutMenu[key]}>{aboutMenu[key]}</li></Link>
                 }
               })
             }
@@ -93,17 +93,17 @@ export default class NavBar extends Component {
                 {
                   Object.keys(classesMenu).map(key => {
                     if(classesMenu[key] !== null && typeof(classesMenu[key]) !== 'number'){
-                      return <Link key={classesMenu[key]} to={'/', classesMenu[key]}><li className='dd-menu-el' key={classesMenu[key]}>{classesMenu[key]}</li></Link>
+                      return <Link key={classesMenu[key]} to={classesMenu[key].split(' ').join('-')}><li className='dd-menu-el' key={classesMenu[key].value}>{classesMenu[key]}</li></Link>
                     }
                   })
                 }
               </ul>
-              : this.state.target === 'Adventures'
+              /*: this.state.target === 'Adventures'
                   ? <ul onMouseLeave={e => this.handleMouseLeave( e )} onMouseEnter={e => this.handleMouseEnterUl( e )} id='adventures' className='list-container'>
                     {
                       Object.keys(adventuresMenu).map(key => {
                         if(adventuresMenu[key] !== null && typeof(adventuresMenu[key]) !== 'number'){
-                          return <Link key={adventuresMenu[key]} to={'/', adventuresMenu[key]}><li className='dd-menu-el' key={adventuresMenu[key]}>{adventuresMenu[key]}</li></Link>
+                          return <Link key={adventuresMenu[key]} to={adventuresMenu[key].split(' ').join('-')}><li className='dd-menu-el' key={adventuresMenu[key]}>{adventuresMenu[key]}</li></Link>
                         }
                       })
                     }
@@ -113,11 +113,11 @@ export default class NavBar extends Component {
                           {
                             Object.keys(eventsMenu).map(key => {
                               if(eventsMenu[key] !== null && typeof(eventsMenu[key]) !== 'number'){
-                                return <Link key={eventsMenu[key]} to={'/', eventsMenu[key]}><li className='dd-menu-el' key={eventsMenu[key]}>{eventsMenu[key]}</li></Link>
+                                return <Link key={eventsMenu[key]} to={eventsMenu[key].split(' ').join('-')}><li className='dd-menu-el' key={eventsMenu[key]}>{eventsMenu[key]}</li></Link>
                               }
                             })
                           }
-                        </ul>
+                        </ul>*/
                       : null
       }
       </>
@@ -134,10 +134,10 @@ export default class NavBar extends Component {
               PHOTO EDUCATION CENTER
             </h1>
             </Link>
-            <Link onMouseLeave={e => this.handleMouseLeave( e )} onMouseOver={e => this.handleHover( e )} className='nav-link' >{this.state.topNav.col1}</Link>
-            <Link onMouseLeave={e => this.handleMouseLeave( e )} onMouseOver={e => this.handleHover( e )} className='nav-link' >{this.state.topNav.col2}</Link>
-            <Link onMouseLeave={e => this.handleMouseLeave( e )} onMouseOver={e => this.handleHover( e )} className='nav-link' >{this.state.topNav.col3}</Link>
-            <Link onMouseLeave={e => this.handleMouseLeave( e )} onMouseOver={e => this.handleHover( e )} className='nav-link' >{this.state.topNav.col4}</Link>
+            <Link onMouseLeave={e => this.handleMouseLeave( e )} onMouseOver={e => this.handleHover( e )} className='nav-link' to='/' >{this.state.topNav.col1}</Link>
+            <Link onMouseLeave={e => this.handleMouseLeave( e )} onMouseOver={e => this.handleHover( e )} className='nav-link' to='/beginner'>{this.state.topNav.col2}</Link>
+            {/*<Link onMouseLeave={e => this.handleMouseLeave( e )} onMouseOver={e => this.handleHover( e )} className='nav-link' to='/cuba 2020'>{this.state.topNav.col3}</Link>*/}
+            {/*<Link onMouseLeave={e => this.handleMouseLeave( e )} onMouseOver={e => this.handleHover( e )} className='nav-link' to='/ready, set, nikon, shoot!'>{this.state.topNav.col4}</Link>*/}
           </nav>
         </header>
         {this.state.hover === true ? this.renderMenu() : null}
