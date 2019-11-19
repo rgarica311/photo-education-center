@@ -17,9 +17,9 @@ export default class ClassComponent extends Component {
       <CpaContext.Consumer>
         {(context) => (
           <div className='classDetail'>
-          this.state.photoUrl
+          {this.state.photoUrl
             ? <div style={{backgroundImage: `url(${this.state.photoUrl})`}} className='classPhoto bannerPhoto'>{this.state.title}</div>
-            : null
+            : null }
 
             <div className='datesDetailsRow'>
               <div className='photo'></div>
