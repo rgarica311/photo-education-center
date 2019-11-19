@@ -346,9 +346,10 @@ export default class App extends Component {
         '/mirrorless-class',
         '/first-look-nikon',
         '/first-look-canon',
+        '/First-Look:-Digital-Mirrorless',
         '/photo-boot-camp',
-        '/manual-class',
-        '/auto-class',
+        '/Mastering-Manual',
+        '/Mastering-Auto',
         '/intermediate-2019',
         '/intermediate-2020',
         '/inspirational-images',
@@ -555,7 +556,7 @@ export default class App extends Component {
                 :null
             )
           }}/>
-        <Route path='/mirrorless-class' render={props => {
+        <Route path='/First-Look:-Digital-Mirrorless' render={props => {
             return (
               this.state.beginnerClassDesc !== undefined && this.state.beginnerTitles !== undefined
                 ?<ClassComponent
@@ -566,7 +567,7 @@ export default class App extends Component {
                 :null
             )
           }}/>
-        <Route path='/manual-class' render={props => {
+        <Route path='/Mastering-Manual' render={props => {
             return (
               this.state.beginnerClassDesc !== undefined && this.state.beginnerTitles !== undefined
                 ?<ClassComponent
@@ -577,7 +578,7 @@ export default class App extends Component {
                 :null
             )
           }}/>
-        <Route path='/auto-class' render={props => {
+        <Route path='/Mastering-Auto' render={props => {
             return (
               this.state.beginnerClassDesc !== undefined && this.state.beginnerTitles !== undefined
                 ?<ClassComponent
