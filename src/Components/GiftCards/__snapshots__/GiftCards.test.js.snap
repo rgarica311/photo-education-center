@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GiftCards Component renders GiftCards by default 1`] = `
+<Fragment>
+  <div
+    className="giftPhoto bannerPhoto"
+  >
+    GIFT CARDS
+  </div>
+  <div
+    className="giftContainer"
+  >
+    <p>
+      Great photographers make great images regardless of the tools they use. The latest and great camera is going to help you get better quality pictures but learning and discovering will help you make truly unique and compelling photographs.
+    </p>
+    <p>
+      Gift cards are available in the following denominations online: $25, $49, $100, & $250  for any class.  If you would like to purchase a gift card in a different amount, they are also available in store or over the phone at 310-375-7014.
+    </p>
+    <p>
+      When you purchase the gift card online, you will receive an email asking for a mailing address where we can ship the card, as well as the name of the recipient. The gift card package will include the card, a few class/workshop flyers, and a letter welcoming the recipient to Creative Photo Academy and explaining how to redeem the card for a class or workshop. Pricing below includes the cost of the card and $5.99 shipping and handling (includes insurance coverage on shipping up to $500).
+    </p>
+  </div>
+</Fragment>
+`;

@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar Component renders NavBar by default 1`] = `
+<Fragment>
+  <header
+    className="nav-bar"
+    style={
+      Object {
+        "backgroundColor": "white",
+        "display": "flex",
+        "height": "80px",
+        "left": "0",
+        "position": "fixed",
+        "top": "0",
+        "zIndex": "2",
+      }
+    }
+  >
+    <nav
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "justifyContent": "space-evenly",
+          "textTransform": "uppercase",
+          "width": "100vw",
+        }
+      }
+    >
+      <Link
+        style={
+          Object {
+            "color": "black",
+            "fontFamily": "Raleway",
+            "fontSize": "1rem",
+            "fontWeight": "900",
+            "textDecoration": "none",
+          }
+        }
+        to="/"
+      >
+        <h1
+          className="logo"
+        >
+          PHOTO EDUCATION CENTER
+        </h1>
+      </Link>
+      <Link
+        className="nav-link"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        to="/"
+      >
+        test link
+      </Link>
+      <Link
+        className="nav-link"
+        onMouseLeave={[Function]}
+        onMouseOver={[Function]}
+        to="/beginner"
+      >
+        test link
+      </Link>
+    </nav>
+  </header>
+</Fragment>
+`;

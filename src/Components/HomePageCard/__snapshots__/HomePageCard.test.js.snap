@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePageCard Component renders HomePageCard by default 1`] = `
+<Fragment>
+  <div
+    className="home-page-card"
+  >
+    <svg
+      aria-hidden="true"
+      className="svg-inline--fa fa-camera fa-3x"
+      data-icon="camera"
+      data-prefix="fas"
+      focusable="false"
+      role="img"
+      style={
+        Object {
+          "color": "red",
+          "marginLeft": "20px",
+          "marginTop": "30px",
+        }
+      }
+      viewBox="0 0 512 512"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M512 144v288c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48h88l12.3-32.9c7-18.7 24.9-31.1 44.9-31.1h125.5c20 0 37.9 12.4 44.9 31.1L376 96h88c26.5 0 48 21.5 48 48zM376 288c0-66.2-53.8-120-120-120s-120 53.8-120 120 53.8 120 120 120 120-53.8 120-120zm-32 0c0 48.5-39.5 88-88 88s-88-39.5-88-88 39.5-88 88-88 88 39.5 88 88z"
+        fill="currentColor"
+      />
+    </svg>
+    <div
+      className="contentFeature"
+      style={
+        Object {
+          "display": "flex",
+          "flexDirection": "column",
+          "marginLeft": "20px",
+          "marginTop": "30px",
+          "position": "relative",
+        }
+      }
+    >
+      <span
+        style={
+          Object {
+            "color": "white",
+            "fontFamily": "Kadwa, serif",
+            "fontSize": "1.4rem",
+            "lineHeight": "1.2em",
+            "marginBottom": "15px",
+            "textTransform": "uppercase",
+          }
+        }
+      >
+        test class name
+      </span>
+      <Link
+        style={
+          Object {
+            "bottom": "15px",
+            "color": "red",
+            "position": "absolute",
+            "textDecoration": "none",
+          }
+        }
+        to="/testpath"
+      >
+        View More
+      </Link>
+    </div>
+  </div>
+</Fragment>
+`;

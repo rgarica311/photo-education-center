@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Review Component renders Review by default 1`] = `
+<div
+  className="reviewContainer"
+>
+  <span
+    className="reviewContent"
+  >
+    test content
+  </span>
+  <span
+    className="reviewBy"
+  >
+    test by
+  </span>
+  <span
+    className="reviewFrom"
+  >
+    test from
+  </span>
+</div>
+`;

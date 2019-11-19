@@ -1,10 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
-import transparentDiv from './transparentDiv.png';
 import './HomePageCard.css'
-
-
 
 const spanStyle = {
   fontFamily: 'Kadwa, serif',
@@ -23,11 +19,6 @@ const content = {
   position: 'relative',
 };
 
-const viewMoreContainer = {
-  postion: 'absolute',
-  bottom: '3px'
-}
-
 const svgStyle = {
   color: 'red',
   marginTop: '30px',
@@ -42,7 +33,6 @@ const linkStyle = {
 }
 
 export default function HomePageCard( props ) {
-  console.log( 'home page card props', props.feature.icon );
   return (
     <>
       <div className='home-page-card'>

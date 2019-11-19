@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Detail Component renders Detail by default 1`] = `
+<Fragment>
+  <ul
+    className="detailsContainerCol"
+  >
+    <div
+      className="detailPhoto"
+    />
+    <li
+      className="detailListEl"
+    >
+      Instructor: Paul's Photo Staff
+    </li>
+    <li
+      className="detailListEl"
+    >
+      Venue: Creative Photo Academy at Paul's Photo
+    </li>
+    <li
+      className="detailListEl"
+    >
+      Address: 23845 South Hawthorne Blvd., Torrance, California, 90505, United States
+    </li>
+    <li
+      className="detailListEl"
+    >
+      Phone: 310-375-7014
+    </li>
+  </ul>
+</Fragment>
+`;

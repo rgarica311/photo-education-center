@@ -37,11 +37,11 @@ export default class ClassCard extends Component {
     return (
         <div className='frameWorkCard'>
           <div className='cardTop'>
-            {this.props.data.value}
+            {this.props.title}
           </div>
           <div className='cardImg'></div>
           <div className='cardBottom'>
-            {this.props.data.desc}
+            {this.props.desc}
           </div>
           <button id='hero' onClick={e => this.handleClick(this.props.path)} className='download'>Click for Details</button>
       </div>

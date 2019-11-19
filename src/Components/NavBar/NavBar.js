@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/fontawesome-svg-core';
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 console.log( 'link', Link );
@@ -38,10 +37,6 @@ export default class NavBar extends Component {
       topNav: props.topNav,
       aboutMenu: props.aboutMenu,
       classesMenu: props.classesMenu,
-      adventuresMenu: props.adventuresMenu,
-      eventsMenu: props.eventsMenu,
-      calendarMenu: props.calendarMenu,
-      fundraisersMenu: props.fundraisersMenu,
       hover: false
     };
   }
@@ -72,9 +67,6 @@ export default class NavBar extends Component {
     })
     const aboutMenu = this.state.aboutMenu;
     const classesMenu = this.state.classesMenu;
-    const adventuresMenu = this.state.adventuresMenu;
-    const eventsMenu = this.state.eventsMenu;
-    const fundraisersMenu = this.state.fundraisersMenu;
     return (
       <>
       {
@@ -83,8 +75,9 @@ export default class NavBar extends Component {
             {
               Object.keys(aboutMenu).map(key => {
                 if(aboutMenu[key] !== null && typeof(aboutMenu[key]) !== 'number'){
-                  return <Link key={aboutMenu[key]} to={'/', aboutMenu[key].split(' ').join('-')}><li className='dd-menu-el' key={aboutMenu[key]}>{aboutMenu[key]}</li></Link>
+                  return <Link key={aboutMenu[key]} to={`/${aboutMenu[key].split(' ').join('-')}`}><li className='dd-menu-el' key={aboutMenu[key]}>{aboutMenu[key]}</li></Link>
                 }
+                return null;
               })
             }
           </ul>
@@ -95,6 +88,7 @@ export default class NavBar extends Component {
                     if(classesMenu[key] !== null && typeof(classesMenu[key]) !== 'number'){
                       return <Link key={classesMenu[key]} to={classesMenu[key].split(' ').join('-')}><li className='dd-menu-el' key={classesMenu[key].value}>{classesMenu[key]}</li></Link>
                     }
+                    return null;
                   })
                 }
               </ul>

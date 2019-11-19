@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ClassCard Component renders ClassCard by default 1`] = `
+<div
+  className="frameWorkCard"
+>
+  <div
+    className="cardTop"
+  />
+  <div
+    className="cardImg"
+  />
+  <div
+    className="cardBottom"
+  />
+  <button
+    className="download"
+    id="hero"
+    onClick={[Function]}
+  >
+    Click for Details
+  </button>
+</div>
+`;

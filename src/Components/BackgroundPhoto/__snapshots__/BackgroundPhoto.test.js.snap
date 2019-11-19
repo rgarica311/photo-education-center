@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundPhoto Component renders BackgroundPhoto by default 1`] = `
+<div
+  className="bg-photo"
+  style={
+    Object {
+      "backgroundImage": "url('http://creativephotoacademy.com/wp-content/uploads/2014/01/aKenya2011-5016.jpg')",
+      "backgroundRepeat": "no-repeat",
+      "backgroundSize": "cover",
+      "height": "100vh",
+      "width": "100vw",
+    }
+  }
+/>
+`;

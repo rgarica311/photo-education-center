@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import './PhotoFrame.css'
 
-let markPhoto = require('./markPhoto.jpg')
 let photoFrame = require('./photoFrame.png')
 
 const photoFrameStyle = {
@@ -13,9 +12,6 @@ const photoFrameStyle = {
 
 }
 
-const frame = {
-  position: `absolute`,
-}
 
 export default class PhotoFrame extends Component {
   constructor(props){
@@ -51,9 +47,9 @@ export default class PhotoFrame extends Component {
         <div style={photoFrameStyle} className='photoFrame'>
           {
             this.state.displayContent === 'none'
-              ? <img onMouseLeave={e => this.handleLeave( e )} onMouseEnter={e => this.handleHover( e )} className='eduPhoto' height='227px' width='222px' src={this.state.photo}/>
+              ? <img alt='edu member' onMouseLeave={e => this.handleLeave( e )} onMouseEnter={e => this.handleHover( e )} className='eduPhoto' height='227px' width='222px' src={this.state.photo}/>
 
-            : <img onMouseLeave={e => this.handleLeave( e )} onMouseEnter={e => this.handleHover( e )} className='eduPhotoBlur' height='227px' width='222px' src={this.state.photo}/>
+            : <img alt='blurred edu member' onMouseLeave={e => this.handleLeave( e )} onMouseEnter={e => this.handleHover( e )} className='eduPhotoBlur' height='227px' width='222px' src={this.state.photo}/>
 
           }
 

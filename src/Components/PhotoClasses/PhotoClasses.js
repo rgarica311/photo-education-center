@@ -6,21 +6,24 @@ export default class BeginnerClasses extends Component {
   constructor(props){
     super(props)
     this.state = {
-      data: props.data
+      data: props.data,
+      titles: props.titles,
+      descs: props.descs
     }
   }
 
-
-
   render(){
-    console.log('this.state.data', this.state.data)
+    console.log('this.state.titles', this.state.titles)
     return(
       <>
       <div className='classesContainer'>
         {
-          Object.keys(this.state.data).map(key =>  (
-            console.log('this.state.data[key]', this.state.data.auto),
-            <ClassCard path={this.state.data[key].path} history={this.props.history} key={this.state.data[key].value} data={this.state.data[key]}/>
+          Object.keys(this.state.titles).map(key =>  (
+            <ClassCard title={this.state.titles[key].title}
+                       desc={this.state.descs[key].class_desc}
+                       path={`/${this.state.titles[key].title.split(' ').join('-')}`}
+                       history={this.props.history}
+                       key={this.state.titles[key].title}/>
           ))
         }
       </div>

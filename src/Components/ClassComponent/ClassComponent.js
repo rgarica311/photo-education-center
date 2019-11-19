@@ -16,15 +16,11 @@ export default class ClassComponent extends Component {
     return (
       <CpaContext.Consumer>
         {(context) => (
-          context.beginnerClassDesc !== undefined
-            ? console.log('context.beginnerClassDesc', context.beginnerClassDesc[0])
-            : null,
-
           <div className='classDetail'>
-          {this.state.photoUrl
+          this.state.photoUrl
             ? <div style={{backgroundImage: `url(${this.state.photoUrl})`}} className='classPhoto bannerPhoto'>{this.state.title}</div>
             : null
-          }
+
             <div className='datesDetailsRow'>
               <div className='photo'></div>
               {this.state.classDesc !== undefined ? <Detail title={this.state.title} classDesc={this.state.classDesc} /> : null}

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PhotoFrame Component renders PhotoFrame by default 1`] = `
+<Fragment>
+  <div
+    className="photoFrame"
+    style={
+      Object {
+        "backgroundImage": "url(photoFrame.png)",
+        "backgroundSize": "cover",
+        "height": "305px",
+        "position": "relative",
+        "width": "251px",
+      }
+    }
+  >
+    <img
+      alt="edu member"
+      className="eduPhoto"
+      height="227px"
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      src="test photo"
+      width="222px"
+    />
+    <span
+      className="contentSpan content"
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+    >
+      test about
+    </span>
+    <span
+      className="bySpan"
+    >
+      test name
+    </span>
+  </div>
+</Fragment>
+`;

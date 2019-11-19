@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 import { library, icon, findIconDefinition  } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import NavBar from './Components/NavBar/NavBar';
 import BackgroundPhoto from './Components/BackgroundPhoto/BackgroundPhoto';
 import HomePageCard from './Components/HomePageCard/HomePageCard';
-import Admin from './Components/Admin/Admin'
-import EditNav from './Components/EditNav/EditNav'
 import Review from './Components/Review/Review'
 import PhotoFrame from './Components/PhotoFrame/PhotoFrame'
 import Faq from './Components/Faq/Faq'
@@ -14,19 +12,15 @@ import GiftCards from './Components/GiftCards/GiftCards'
 import Policies from './Components/Policies/Policies'
 import ClassComponent from './Components/ClassComponent/ClassComponent'
 import PhotoClasses from './Components/PhotoClasses/PhotoClasses'
-import Adventure from './Components/Adventure/Adventure'
-import Event from './Components/Event/Event'
 import './App.css'
 import CpaContext from './cpaContext'
 
-//import MainComponents from './Components/MainComponents/MainComponents.js'
 
 library.add( fas );
 
 const camera = findIconDefinition( { prefix: 'fas', iconName: 'camera' } );
 const camIcon = icon( camera ).html;
-//const camIcon = camIconDef.icon[4];
-console.log('camIcon', camIcon[0])
+
 
 const featureContainerStyle = {
   position: 'absolute',
@@ -310,13 +304,13 @@ export default class App extends Component {
           content: 'I just can’t speak highly enough about the classes at Creative Photo Academy.  I recently nought a new camera and thought I was doing great using the Auto mode.  Just a few hours in a Beginners Class with Kenny  opened my eyes to moving beyond that.  Kenny was a great teacher and covered a lot of material in just a few hours.',
           by: '-Sashi E',
           from: 'yelp'
-        },
+        }
       ],
 
       educators: [
         {
           name: 'Lorem Ipsum',
-          about: 'Lorem ipsum dolor amet vinyl selvage roof party, dreamcatcher lomo heirloom artisan church-key prism kickstarter everyday carry try-hard chartreuse glossier knausgaard.',
+          about: 'Lorem ipsum dolor amet vinyl selvage roof party dreamcatcher lomo heirloom artisan church-key prism kickstarter everyday carry try-hard chartreuse glossier knausgaard.',
           photo: `${require('./markPhoto.jpg')}`,
 
         },
@@ -324,7 +318,7 @@ export default class App extends Component {
           name: 'Lorem Ipsum',
           about: 'Lomo actually stumptown occupy venmo taiyaki listicle wayfarers semiotics.',
           photo: `${require('./sheryl.jpg')}`,
-        },,
+        },
 
         {
           name: 'Lorem Ipsum',
@@ -447,7 +441,6 @@ export default class App extends Component {
   }
 
   renderFeatures() {
-    const { features } = this.state;
     return (
       <div style={featureContainerStyle} className='feature-container'>
         {this.state.features.map( feature => (
@@ -522,12 +515,11 @@ export default class App extends Component {
   }
 
   renderBeginnerRoutes(){
-    console.log('this.state.beginnerClassDesc in render beginner', this.state.beginnerClassDesc)
     return (
       <>
         <Route path='/beginner' render={props => {
             return (
-              <PhotoClasses data={this.state.beginnerCard} history={props.history}/>
+              <PhotoClasses titles={this.state.beginnerTitles} descs={this.state.beginnerClassDesc} data={this.state.beginnerCard} history={props.history}/>
             )
           }}/>
         <Route path='/first-look-nikon' render={props => {
@@ -604,28 +596,12 @@ export default class App extends Component {
   renderMainRoutes() {
     return (
       <div>
-        <Route path='/cuba-2020' component={Adventure}/>
         <Route path='/FAQ' component={Faq}/>
 
         <Route path='/policies' component={Policies}/>
         <Route path='/gift-cards' component={GiftCards}/>
-        <Route exact path='/admin' component={Admin}/>
-        <Route path='/admin/edit-nav' component={Admin}/>
-        <Route path='/admin/edit-nav' component={EditNav}/>
-        <Route path='/admin/edit-feautres' component={Admin}/>
-        <Route path='/educators' render={props => {
-            const educatorsStyle= {
-              backgroundColor: 'black',
-              display: 'flex',
-              justifyContent: 'space-evenly',
-              flexWrap: 'wrap',
-              height: 'calc(100vh - 80px)',
-              width: '100vw',
-              alignItems: 'center',
-              position: 'relative',
-              top: '80px'
 
-            }
+        <Route path='/educators' render={props => {
             return (
               <>
               <div className='educatorsContainer'>

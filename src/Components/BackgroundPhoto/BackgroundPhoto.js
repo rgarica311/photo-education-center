@@ -9,11 +9,7 @@ const bgPhotoStyle = {
 };
 
 export default class BackgroundPhoto extends Component {
-  constructor( props ) {
-    super( props );
-
-  };
-
+  
   render() {
     return (
       <div style={bgPhotoStyle} className='bg-photo'></div>
