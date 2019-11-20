@@ -1,5 +1,30 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Photo Education Center
+
+This is an application for viewing information on photography classes. 
+
+## Instructions
+
+Click navigation links to view different pages.
+
+## Screenshots
+
+![Page one](screenshots/page1.png?raw=true)
+![Page two](screenshots/page2.png?raw=true)
+![Page three](screenshots/page3.png?raw=true)
+
+## Live App
+
+https://photo-school.rorygarcia1.now.sh/#/
+
+## Technology Used 
+
+React
+Node
+JavaScript
+CSS
+
 ## Available Scripts
 
 In the project directory, you can run:
