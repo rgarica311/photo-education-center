@@ -2,6 +2,5 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin-top: 100px;
-  padding: 50px;
+  padding: 25px;
 }

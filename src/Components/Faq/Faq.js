@@ -7,7 +7,6 @@ export default function Faq(props) {
     <div className='faqPhoto bannerPhoto'>FAQ</div>
     <div className='faqContainer'>
       <h2 className='faqH2'>Frequently Asked Questions</h2>
-      <span className='subhead'>Answers to your frequently asked questions..</span>
       <ul className='faqList'>
         <li className='faqElement'>
           <span className='question'>Where are you located?</span>

@@ -23,8 +23,8 @@ export default class ClassComponent extends Component {
 
             <div className='datesDetailsRow'>
               <div className='photo'></div>
-              {this.state.classDesc !== undefined ? <Detail title={this.state.title} classDesc={this.state.classDesc} /> : null}
               <p className='beginnerClassDetail'>{this.state.classDesc}</p>
+              {this.state.classDesc !== undefined ? <Detail title={this.state.title} classDesc={this.state.classDesc} /> : null}
             </div>
           </div>
         )}

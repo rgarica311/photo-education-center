@@ -53,46 +53,6 @@ export default class App extends Component {
         }
       ],
 
-      intermediateCard: {
-        portraits: {
-          value: 'Portrait & Event',
-          desc: 'Focus your efforts on capturing the emotion of your subject and controlling the environment for the very best portraits and candid people photos.',
-          path: '/portraits-events'
-        },
-
-        flash: {
-          value: 'Flash Photography',
-          desc: 'Have fun learning to control your flash, your camera and your lens to sculpt light and create stunning images that look like you never used a flash!',
-          path: '/flash-photography',
-        },
-
-        exposure: {
-          value: 'Exposure and Composition',
-          desc: 'Learn to apply the rules of composition and exposure to develop an artistic approach to build stunning images. Train yourself to see creatively and shoot the images you desire.',
-          path: '/exposure-composition',
-        },
-
-        landscape: {
-          value: 'Landscape Photography',
-          desc: 'Great landscape images are built in your camera. Learn to use the light, your lens, foreground, background and filters to create stunning outdoor photos.',
-          path: '/landscape-photography',
-        }
-      },
-
-      advancedCard:{
-        inspriational: {
-          value: 'Inspirational Images: Edward Weston',
-          desc: 'Each year we chose an exceptional photographer to inspire us on our creative journey. As a group, we’ll discover how the artist’s work challenges us and changes how we envision, build and create images.',
-          path: '/inspirational-images'
-        },
-
-        project:{
-          value: 'The Project: Concept To Presentation',
-          desc: 'THE PROJECT.  Concept to Presentation will inspire you to create a personal photo project.  Conceiving a theme, transforming an idea, creating the pictures and culminating in a finished presentation will build a new focus and purpose to your photography.',
-          path: '/the-project',
-        }
-      },
-
       photoEditCard: {
         online:{
           value: 'Organizing Digital Photos',
@@ -309,20 +269,20 @@ export default class App extends Component {
 
       educators: [
         {
-          name: 'Lorem Ipsum',
-          about: 'Lorem ipsum dolor amet vinyl selvage roof party dreamcatcher lomo heirloom artisan church-key prism kickstarter everyday carry try-hard chartreuse glossier knausgaard.',
+          name: 'Mark Comon',
+          about: 'As a Certified Photographic Counselor, photo instructor and photographic artist, Mark Comon has the knowledge, experience and enthusiasm to solve any of your photographic problems or questions.',
           photo: `${require('./markPhoto.jpg')}`,
 
         },
         {
-          name: 'Lorem Ipsum',
-          about: 'Lomo actually stumptown occupy venmo taiyaki listicle wayfarers semiotics.',
+          name: 'Sheryl Comon',
+          about: 'Sheryl assists with the “nuts and bolts” of running Creative Photo Academy. She is available for help with registrations, logistics and any of your needs while at CPA.',
           photo: `${require('./sheryl.jpg')}`,
         },
 
         {
-          name: 'Lorem Ipsum',
-          about: 'Brunch quinoa VHS health goth tattooed four dollar toast pinterest tousled hammock offal meh subway tile',
+          name: 'Lucy Bailey',
+          about: 'Lucy is our resident from “down under” she oversees the management of Creative Photo Academy; handling class scheduling, registration, and marketing.',
           photo: `${require('./lucy.jpg')}`,
         }
       ],
@@ -604,13 +564,13 @@ export default class App extends Component {
 
         <Route path='/educators' render={props => {
             return (
-              <>
+
               <div className='educatorsContainer'>
                 {this.state.educators.map(educator => (
                   <PhotoFrame key={educator.name} educator={educator}/>
                 ))}
               </div>
-              </>
+
             )
           }}/>
         <Route path='/reviews' render={props => {
@@ -618,19 +578,18 @@ export default class App extends Component {
               display: 'flex',
               justifyContent: 'space-evenly',
               position: 'relative',
-              top: '20vh',
             }
 
 
             return (
-              <>
-              <div className='reviewPhoto bannerPhoto'>REVIEWS</div>
-              <div style={reviewsContainerStyle} className='reviewsContainer'>
-                {this.state.reviews.map(review => (
-                  <Review key={review.by} review={review}/>
-                ))}
+              <div className='reviewPage'>
+                <div className='reviewPhoto bannerPhoto'>REVIEWS</div>
+                <div style={reviewsContainerStyle} className='reviewsContainer'>
+                  {this.state.reviews.map(review => (
+                    <Review key={review.by} review={review}/>
+                  ))}
+                </div>
               </div>
-              </>
             )
           }}/>
 

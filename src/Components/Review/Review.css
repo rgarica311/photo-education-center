@@ -1,9 +1,12 @@
 .reviewContainer {
   width: 400px;
-  height: 200px;
   border-radius: 5px;
   background-color: lightgrey;
   padding: 10px;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-bottom: 15px;
 }
 
 .reviewBy {
@@ -16,6 +19,11 @@
   margin-bottom: 10px
 }
 
+.reviewPage {
+  display: flex;
+  flex-direction: column;
+}
+
 @media screen and (max-width: 600px) {
   .reviewsContainer {
     display: flex;
@@ -25,7 +33,6 @@
 
   .reviewContainer {
     width: 80vw;
-    height: 30vh;
     margin-top: 20px;
   }
 

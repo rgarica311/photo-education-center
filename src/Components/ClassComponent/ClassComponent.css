@@ -55,8 +55,50 @@ li {
   color: black;
 }
 
-@media screen and (max-width: 812px) {
-  div.classPhoto {
-    font-size: 1.5rem;
+.detsilUlContainer {
+  width: 100%;
+}
+
+@media screen and (max-width: 1366px) {
+  .classPhoto {
+    height: 15vh;
   }
+
+  .photo {
+    height: 20vh;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  div.datesDetailsRow {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  ul.detailsContainerCol {
+    width: 100%;
+  }
+
+  div.detailUlContainer {
+    width: 100%;
+    height: 80vh;
+  }
+
+  p.beginnerClassDetail {
+    position: relative;
+    top: 0;
+    margin-bottom: 20px;
+    padding: 25px;
+    font-family: kadwa;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  
+
+
+
 }

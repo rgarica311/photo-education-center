@@ -51,4 +51,9 @@
   .photoFrame {
     margin-top: 10px;
   }
+
+  div.educatorsContainer {
+    margin: 0;
+    padding: 0;
+  }
 }

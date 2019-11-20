@@ -5,7 +5,7 @@
   width: 250px;
   position: relative;
   margin-bottom: 25px;
-  margin-right: 80px;
+  margin-right: 15px;
 }
 
 .cardTop {
@@ -92,5 +92,14 @@
 @media screen and (max-width: 749px){
   .storyH1 {
     z-index: 0;
+  }
+
+
+  .frameWorkCard {
+    margin-right: 0;
+  }
+
+  .classesContainer {
+    justify-content: center;
   }
 }
