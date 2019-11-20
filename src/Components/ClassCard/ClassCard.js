@@ -29,7 +29,6 @@ export default class ClassCard extends Component {
   }
 
   handleClick(path){
-    console.log('path', path)
     this.state.history.push(`${path}`)
   }
 

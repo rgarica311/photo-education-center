@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
-console.log( 'link', Link );
-
 const headerStyle = {
   position: 'fixed',
   top: '0',
@@ -42,7 +40,6 @@ export default class NavBar extends Component {
   }
 
   handleHover(e) {
-    console.log('e.target', e.target.text)
     this.setState({
       hover: true,
       target: e.target.text
@@ -62,9 +59,7 @@ export default class NavBar extends Component {
   }
 
   renderMenu() {
-    Object.keys(this.state.aboutMenu).forEach((key) => {
-      console.log(`this.state.aboutMenu${key}: ${this.state.aboutMenu[key]}, ${typeof(this.state.aboutMenu[key])}`)
-    })
+
     const aboutMenu = this.state.aboutMenu;
     const classesMenu = this.state.classesMenu;
     return (
@@ -92,27 +87,7 @@ export default class NavBar extends Component {
                   })
                 }
               </ul>
-              /*: this.state.target === 'Adventures'
-                  ? <ul onMouseLeave={e => this.handleMouseLeave( e )} onMouseEnter={e => this.handleMouseEnterUl( e )} id='adventures' className='list-container'>
-                    {
-                      Object.keys(adventuresMenu).map(key => {
-                        if(adventuresMenu[key] !== null && typeof(adventuresMenu[key]) !== 'number'){
-                          return <Link key={adventuresMenu[key]} to={adventuresMenu[key].split(' ').join('-')}><li className='dd-menu-el' key={adventuresMenu[key]}>{adventuresMenu[key]}</li></Link>
-                        }
-                      })
-                    }
-                  </ul>
-                  : this.state.target === 'Events'
-                      ? <ul onMouseLeave={e => this.handleMouseLeave( e )} onMouseEnter={e => this.handleMouseEnterUl( e )} id='events' className='list-container'>
-                          {
-                            Object.keys(eventsMenu).map(key => {
-                              if(eventsMenu[key] !== null && typeof(eventsMenu[key]) !== 'number'){
-                                return <Link key={eventsMenu[key]} to={eventsMenu[key].split(' ').join('-')}><li className='dd-menu-el' key={eventsMenu[key]}>{eventsMenu[key]}</li></Link>
-                              }
-                            })
-                          }
-                        </ul>*/
-                      : null
+                : null
       }
       </>
 

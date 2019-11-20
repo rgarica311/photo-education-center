@@ -12,7 +12,6 @@ export default class ClassComponent extends Component {
     }
   }
   render() {
-    console.log('this.state.classDesc class component', this.state.classDesc)
     return (
       <CpaContext.Consumer>
         {(context) => (

@@ -53,24 +53,6 @@ export default class App extends Component {
         }
       ],
 
-      photoEditCard: {
-        online:{
-          value: 'Organizing Digital Photos',
-          desc: 'Organizing Digital Photos is an ONLINE beginner level class that gets you started with organizing, storing, and backing up digital photos. Managing your photos in a simple and repeatable way is a must for every photographer!',
-          path: '/organizing-photos'
-        },
-        lightroom:{
-          value: 'Lightroom',
-          desc: 'Are you ready to master the art of photo editing? Our Photoshop CC and Lightroom CC classes empower you to take your pictures to the next level.',
-          path: '/lightroom'
-        },
-        photoshop:{
-          value: 'Photoshop',
-          desc: 'Are you ready to master the art of photo editing? Our Photoshop CC and Lightroom CC classes empower you to take your pictures to the next level.',
-          path: '/photoshop'
-        }
-      },
-
       beginnerCard: {
         nikon: {
           value: 'First Look, Nikon',
@@ -114,44 +96,6 @@ export default class App extends Component {
           value: 'Mastering auto: Making WOW Pictures Simply!',
           desc: 'Making WOW Pictures simply.  Learn to make your photos to POP! Hands on experience to learn to control your lens, flash, exposure and focus.  See examples of “with & without” settings applied and how to make good pictures even better. This is the ideal class for SLR’s, pocket and mirrorless cameras.',
           path: 'auto-class'
-        }
-      },
-
-      advancedFull: {
-        perspectives: {
-          title: {value: 'Advanced Perspectives', label: 'Class'},
-          dates: {value: 'Nov 12th 2019: 7pm - 9am', label: 'When'},
-          address: {value: '23845 South Hawthorne Blvd., Torrance, California, 90505, United States', label: 'Address'},
-          phone: {value: '310-375-7014', label: 'Phone'},
-          price: {value:  'Free', label: 'Price'},
-          classDesc: 'Join the CPA Advanced Students as they present their Year-long photo essays and portfolios. This evening is always popular as a celebration, inspiration, and springboard to your creativity. Join us for our 2020 Advanced classes: Saturday and Tuesday Sessions',
-          photoUrl: `http://creativephotoacademy.com/wp-content/uploads/2019/10/JP38553v1-sep-high-str-2100-wide-300dpi-710x400.jpg`,
-        },
-
-        advanced: {
-
-          inspirational: {
-            instructor: {value: 'Edward Weston', label: 'Instructor'},
-            title: {value: 'Inspirational Images', label: 'Class'},
-            dates: {value: 'Saturdays 9-11am', label: 'When'} ,
-            address: {value: '23845 South Hawthorne Blvd., Torrance, California, 90505, United States', label: 'Address'},
-            phone: {value: '310-375-7014', label: 'Phone'},
-            price: {value:  '$399.00', label: 'Price'},
-            classDesc: 'Inspirational Images 2020 is dedicated to the exploration of Edward Weston’s mastery of composition and the emotion of photography. Learn how to incorporate Edward’s visions and techniques into your photography. You will be challenged and rewarded, and you will see how your image quality and expressive value will increase.',
-            photoUrl: `http://creativephotoacademy.com/wp-content/uploads/2014/02/Class-First-Look-Nikon-710x400.jpg`,
-          },
-
-          project: {
-            instructor: {value: 'Paul\'s Photo Staff', label: 'Instructor'},
-            toBring:{ value: 'Camera, instruction manual, pen and paper', label: 'To Bring'},
-            title: {value: 'The Project: Concept to Presentation', label: 'Class'},
-            dates: {value: 'Nov 23rd 2019: 9am - 11am, Jan 9th 2020: 7pm to 9pm', label: 'When'} ,
-            address: {value: '23845 South Hawthorne Blvd., Torrance, California, 90505, United States', label: 'Address'},
-            phone: {value: '310-375-7014', label: 'Phone'},
-            price: {value:  '$399.00', label: 'Price'},
-            classDesc: 'THE PROJECT.  Concept to Presentation will inspire you to create a personal photo project.  Conceiving a theme, transforming an idea, creating the pictures and culminating in a finished presentation will build a new focus and purpose to your photography.  You will grow technically, develop your artistic voice and build a unique vision on this year-long journey. Creating a photo project or a personal portfolio is a worthy challenge for any photographer. Concept to Presentation utilizes monthly interactive print presentations to inspire discussion of your creative photographic process. You will focus on your photographic technique and artistic process whilst simultaneously building a collection of your best works. You will grow through personal coaching, artistic development, and by the end you will have honed your unique expression in a nurturing group environment.',
-            photoUrl: `http://creativephotoacademy.com/wp-content/uploads/2014/02/Class-First-Look-Nikon-710x400.jpg`,
-          }
         }
       },
 
@@ -289,41 +233,19 @@ export default class App extends Component {
 
       routePaths: [
         '/',
-        '/about-us',
         '/classes',
-        '/adventures',
-        '/events',
-        '/fundraisers',
-        '/galleries',
-        '/calendar',
         '/educators',
         '/reviews',
         '/FAQ',
         '/gift-cards',
         '/policies',
-        '/contact-us',
         '/beginner',
-        '/mirrorless-class',
         '/first-look-nikon',
         '/first-look-canon',
         '/First-Look:-Digital-Mirrorless',
         '/photo-boot-camp',
         '/Mastering-Manual',
         '/Mastering-Auto',
-        '/intermediate-2019',
-        '/intermediate-2020',
-        '/inspirational-images',
-        '/advanced-2020',
-        '/advanced-perspectives',
-        '/photo-editing',
-        '/private-lessons',
-        '/yosemite-winter-photo-adventure',
-        '/death-valley-adventure',
-        '/scotlan-photo-adventure',
-        '/africa-cultural-safari-2020',
-        '/cuba-2020',
-        '/tuscany-2020',
-        '/infrared-photography'
       ],
 
       navLinks: [],
@@ -332,16 +254,12 @@ export default class App extends Component {
   setNavLinks = navLinks => {
     this.setState({
       navLinks,
-    }, () => {
-      console.log('this.state.navLinks[0]', this.state.navLinks[0]);
     })
   }
 
   setClassDesc = beginnerClassDesc => {
     this.setState({
       beginnerClassDesc
-    }, () => {
-      console.log('this.state.beginnerClassDesc in set state', this.state.beginnerClassDesc)
     })
   }
 
@@ -354,7 +272,6 @@ export default class App extends Component {
   getNavLinks = async () => {
     try {
       let response = await fetch('https://hidden-badlands-97660.herokuapp.com/nav')
-      console.log('response in get nav links', response)
       if(!response.ok){
         throw new Error(response.status)
       } else {
@@ -369,7 +286,6 @@ export default class App extends Component {
   getClassDesc = async () => {
     try {
       let response = await fetch('https://hidden-badlands-97660.herokuapp.com/classdesc')
-      console.log('response in get class desc', response)
       if(!response.ok){
         throw new Error(response.status)
       } else {
@@ -383,7 +299,6 @@ export default class App extends Component {
   getTitles = async () => {
     try {
       let response = await fetch('https://hidden-badlands-97660.herokuapp.com/titles')
-      console.log('response in get titles', response)
       if(!response.ok){
         throw new Error(response.status)
       } else {
@@ -395,7 +310,6 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    console.log('component did mount')
     this.getClassDesc()
     this.getTitles()
     this.getNavLinks()
@@ -428,51 +342,6 @@ export default class App extends Component {
           ))}
         </>
     );
-  }
-
-  renderPhotoEditingRoutes(){
-    return(
-      <>
-        <Route path='/photo-editing' render={props => {
-            return  <PhotoClasses data={this.state.photoEditCard} hitory={props.histoy}/>
-        }}/>
-      </>
-    )
-  }
-
-  renderAdvancedRoutes(){
-    return (
-      <>
-      <Route path='/advanced-perspectives' render={props => {
-        return (
-          <ClassComponent classInfo={this.state.advancedFull.perspectives}/>
-        )
-      }}/>
-    <Route path='/advanced-2020' render={props => {
-        return (
-          <PhotoClasses data={this.state.advancedCard} history={props.history}/>
-        )
-      }}/>
-    <Route path='/inspirational-images' render={props => {
-        return (
-        <ClassComponent classInfo={this.state.advancedFull.advanced.inspirational}/>
-        )
-    }}/>
-
-      </>
-    )
-  }
-
-  renderIntermediateRoutes(){
-    return(
-      <>
-      <Route path='/intermediate-2020' render={props => {
-          return (
-            <PhotoClasses data={this.state.intermediateCard} history={props.history}/>
-          )
-        }}/>
-      </>
-    )
   }
 
   renderBeginnerRoutes(){
@@ -623,9 +492,6 @@ export default class App extends Component {
           <main className='App_main'>
             {this.renderMainRoutes()}
             {this.renderBeginnerRoutes()}
-            {this.renderIntermediateRoutes()}
-            {this.renderAdvancedRoutes()}
-            {this.renderPhotoEditingRoutes()}
           </main>
         </div>
     </CpaContext.Provider>

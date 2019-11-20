@@ -11,7 +11,6 @@ export default class Detail extends Component {
   }
 
   render(){
-    console.log('this.state.classDesc', this.state.classDesc)
     return(
       <>
       <div className="detailUlContainer">

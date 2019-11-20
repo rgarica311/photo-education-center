@@ -13,7 +13,6 @@ export default class BeginnerClasses extends Component {
   }
 
   render(){
-    console.log('this.state.titles', this.state.titles)
     return(
       <>
       <div className='classesContainer'>

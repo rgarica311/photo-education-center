@@ -27,7 +27,6 @@ export default class PhotoFrame extends Component {
 
   handleHover(e) {
     e.stopPropagation()
-    console.log('hadle hover')
     this.setState({
       displayContent: 'flex'
     })
@@ -35,7 +34,6 @@ export default class PhotoFrame extends Component {
 
   handleLeave(e) {
     e.stopPropagation()
-    console.log('handle leave')
     this.setState({
       displayContent: 'none'
     })
